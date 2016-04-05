@@ -3,9 +3,9 @@ set -e
 
 apt-get install libtool libusb-1.0-0-dev autoconf pkg-config
 
-mkdir -p output/usr
+mkdir -p output
 
-OPENOCD_DIR=${PWD}/output/usr
+OPENOCD_DIR=${PWD}/output
 
 # Build openocd
 git clone http://repo.or.cz/openocd.git
