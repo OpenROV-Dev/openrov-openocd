@@ -8,7 +8,7 @@ mkdir -p output
 OPENOCD_DIR=${PWD}/output
 
 # Build openocd
-git clone http://repo.or.cz/openocd.git
+git clone https://github.com/OpenROV/openocd_pac5223.git openocd --depth 1
 cd openocd
 ./bootstrap
 ./configure --prefix=/usr/ --enable-sysfsgpio --enable-maintainer-mode --enable-bcm2835gpio
