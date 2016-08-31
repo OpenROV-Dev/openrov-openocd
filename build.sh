@@ -8,6 +8,7 @@ mkdir -p output
 OPENOCD_DIR=${PWD}/output
 
 # Build openocd
+rm -rf openocd
 git clone https://github.com/OpenROV/openocd_pac5223.git openocd --depth 1
 cd openocd
 ./bootstrap
@@ -15,5 +16,4 @@ cd openocd
 make -j8
 make install DESTDIR=${OPENOCD_DIR}
 cd ..
-rm -rf openocd
 
